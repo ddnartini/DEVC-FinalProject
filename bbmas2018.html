@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BBMAs 2018</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style>
+	body {
+  	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+		}
+
+	.flip-card {
+  	background-color: transparent;
+  	width: 300px;
+  		height: 300px;
+  perspective: 1000px;
+	}
+
+	.flip-card-inner {
+ 	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition: transform 0.6s;
+  	transform-style: preserve-3d;
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+
+	.flip-card:hover .flip-card-inner {
+  	transform: rotateY(180deg);
+	}
+
+	.flip-card-front, .flip-card-back {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	backface-visibility: hidden;
+	}
+
+	.flip-card-front {
+  	background-color: #bbb;
+  	color: black;
+  	z-index: 2;
+	}
+
+	.flip-card-back {
+  	background-color: pink;
+  	color: red;
+  	transform: rotateY(180deg);
+  	z-index: 1;
+	}
+	</style>
+</head>
+<body style="background-image:url('https://heavyeditorial.files.wordpress.com/2018/05/billboard-music-awards-2018-logo.jpg?quality=65&strip=all');">
+	<br>
+	<h1 style="color:white; absolute; left: 25px;" class="animated infinite bounce delay-2s"><a href="index.html"> BBMAs </a></h1>
+	<h3 style="color: white; position: absolute; top: 80px; left: 25px;">Billboard Music Award 2018 Winner</h3>
+    <br>
+<!-- comment -->
+     <!-- Button trigger modal -->
+     <button style="position: absolute; top: 130px; left: 25px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Speak Yourself
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">COMMENT</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="https://formspree.io/ddnartini@gmail.com">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <br>
+                        <label for="exampleFormControlInput1">Username</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nameexample">
+                    </div>
+                      
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comment</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Comment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- winner list -->
+	<br>
+    <br>
+    <br>
+    <br>
+<div class="flip-card" style="position: absolute; top: 230px; right: 200; left: 100px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://pbs.twimg.com/media/DdqAU39VQAA-URq.jpg" alt="Top Artist" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <br>
+	  <h2>Top Artist</h2>
+	  <h4>Ed Sheeran</h4>
+    <br>
+	 <h5> Nominees : </h5>
+    <h6> Drake <br> Kendrick Lamar <br> Bruno Mars <br> Ed Sheeran <br> Taylor Swift </h6>
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card" style="position: absolute; top: 230px; left: 525px;">
+	<div class="flip-card-inner">
+	  <div class="flip-card-front">
+		<img src="https://media.teen.co.id/files/thumb/bts_bighit_twtw.jpg?p=sorasarah/&w=570&m=fit" alt="Top Social Artis" style="width:300px;height:300px;">
+	  </div>
+	  <div class="flip-card-back">
+      <br>
+		<h2>Top Social Artis</h2>
+		<h4>BTS</h4>
+    <br>
+    <h5> Nominees : </h5>
+    <h6>Justin Bieber <br>
+        BTS<br>
+        Ariana Grande <br>
+        Demi Lovato<br>
+        Shawn Mendes </h6>
+	  </div>
+	</div>
+  </div>
+
+	  
+  <div class="flip-card" style="position: absolute; top: 230px; left: 950px;">
+	<div class="flip-card-inner">
+	  <div class="flip-card-front">
+		<img src="https://pbs.twimg.com/media/DdtgfZrV0AE9M0m.jpg" alt="Top New Artist" style="width:300px;height:300px;">
+	  </div>
+	  <div class="flip-card-back">
+      <br>
+		<h2>Top New Artist</h2>
+		<h4>Khalid</h4>
+    <br>
+        <h5> Nominees : </h5>
+		<h6>21 Savage <br>
+            Camila Cabello <br>
+            Cardi B <br>
+            Khalid <br>
+            Kodak Black </h6>
+	  </div>
+	</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+   <script src="jquery-3.3.1.js" ></script>
+   <script src="main.js"></script>
+</body>
+</html>
+
